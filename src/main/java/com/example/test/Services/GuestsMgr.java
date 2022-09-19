@@ -28,6 +28,8 @@ public class GuestsMgr {
     private PersonRepository personRepository;
     @Autowired
     private GuestRepository guestRepository;
+    private static final int HALF_YEAR = 179;
+    private static final int DAY = 1;
 
     public void createGuestsVisit() {
         List<DatabaseEmployee> allDatabaseEmployees = employeeRepository.findAll();
@@ -58,7 +60,7 @@ public class GuestsMgr {
         long startDate = employeeHireDate.getTime();
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(employeeHireDate);
-        calendar.add(Calendar.DATE, new Random().nextInt(179) + 1);
+        calendar.add(Calendar.DATE, new Random().nextInt(HALF_YEAR) + DAY);
         long endDate = calendar.getTime().getTime();
         return new Date(ThreadLocalRandom.current().nextLong(startDate, endDate));
     }
