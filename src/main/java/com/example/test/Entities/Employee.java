@@ -1,14 +1,17 @@
 package com.example.test.Entities;
+
 import com.example.test.Enums.PersonType;
+
 import java.util.Date;
 
-public class Employee extends Person{
+public class Employee extends Person {
 
     private Date hireTime;
     private Date firedTime;
     private Department department;
 
-    public Employee(){}
+    public Employee() {
+    }
 
     public Employee(Date hireTime, Date firedTime, Department department) {
         this.hireTime = hireTime;
