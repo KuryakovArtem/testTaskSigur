@@ -18,10 +18,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 @SpringBootApplication
-public class TestTaskApplication {//implements CommandLineRunner
-
-    public static void main(String[] args) throws ParseException, NoSuchAlgorithmException, InterruptedException {
-//		SpringApplication.run(TestTaskApplication.class, args);
+public class TestTaskApplication {
+    public static void main(String[] args) throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Calendar hiringPeriod = Calendar.getInstance();
         String startDate = "01-01-2022";
@@ -46,17 +44,4 @@ public class TestTaskApplication {//implements CommandLineRunner
             hiringPeriod.add(Calendar.DATE, 1);
         }
     }
-
-
-//	@Override
-//	public void run(String... args)  {
-//		ApplicationContext context = SpringApplication.run(TestTaskApplication.class, args);
-//		MainService service = (MainService) context.getBean("mainService");
-//		ApplicationContext context = SpringApplication.run(TestTaskApplication.class, args);
-//		DepartmentGenerator generator = (DepartmentGenerator) context.getBean("departmentGenerator");
-//		generator.generateDepartment();
-//		EmployeesMgr mgr = (EmployeesMgr) context.getBean("employeesMgr");
-//		mgr.generateEmployee();
-//	}
-
 }

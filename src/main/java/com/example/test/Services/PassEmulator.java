@@ -70,7 +70,6 @@ public class PassEmulator {
             }
         } else {
             if (Objects.equals(person.getDatabaseGuest().getVisitDate(), nowDate.getTime())) {
-                DatabaseDepartment aaaa = departmentRepository.findByDatabaseEmployee(person.getDatabaseGuest().getEmpId());
                 System.out.println(nowDate.getTime()
                         + "Предоставлен доступ гостю "
                         + person.getUid().toString()
