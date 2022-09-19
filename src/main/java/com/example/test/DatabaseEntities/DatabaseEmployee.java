@@ -20,12 +20,9 @@ public class DatabaseEmployee {
     @JoinColumn(name = "person_id", referencedColumnName = "uid")
     @MapsId
     private DatabasePerson person;
-//    @OneToOne(mappedBy = "employee")
-//    private DatabaseDepartment databaseDepartment;
+
 
     @ManyToOne
-
-//    @PrimaryKeyJoinColumn
     private DatabaseDepartment databaseDepartment;
 
     public DatabaseEmployee(Long id, Date hiredTime, Date firedTime, DatabaseDepartment databaseDepartment, DatabasePerson person) {

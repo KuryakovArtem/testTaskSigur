@@ -21,6 +21,4 @@ public interface EmployeeRepository extends JpaRepository<DatabaseEmployee, Long
     public void setFiredTime(Date fired_time, Long id);
 
 
-
-
 }

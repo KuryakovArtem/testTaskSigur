@@ -1,5 +1,7 @@
 package com.example.test.DatabaseEntities;
+
 import com.example.test.Enums.PersonType;
+
 import javax.persistence.*;
 
 
@@ -9,10 +11,10 @@ public class DatabasePerson {
 
     @Id
     @GeneratedValue
-    @Column(name = "uid",updatable = false, nullable = false)
+    @Column(name = "uid", updatable = false, nullable = false)
     private Long uid;
     @Column(name = "card")
-    private byte [] card;
+    private byte[] card;
     @Enumerated(EnumType.STRING)
     private PersonType type;
 

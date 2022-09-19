@@ -1,5 +1,7 @@
 package com.example.test.DatabaseEntities;
+
 import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.util.Date;
 
