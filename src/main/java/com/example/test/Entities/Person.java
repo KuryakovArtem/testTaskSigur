@@ -1,10 +1,11 @@
 package com.example.test.Entities;
 
 import com.example.test.Enums.PersonType;
+
 public class Person {
 
     private Long uid;
-    private byte [] card;
+    private byte[] card;
     private PersonType type;
 
     public Person(Long uid, byte[] card, PersonType type) {

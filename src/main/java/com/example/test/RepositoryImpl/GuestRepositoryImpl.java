@@ -13,7 +13,7 @@ public class GuestRepositoryImpl implements GuestRepositoryCustom {
     private GuestRepository guestRepository;
     @Override
     public DatabaseGuest saveGuest(Guest guest) {
-        DatabasePerson person = new DatabasePerson();//засеттить поля
+        DatabasePerson person = new DatabasePerson();
         person.setCard(guest.getCard());
         person.setType(PersonType.GUEST);
         DatabaseGuest databaseGuest = new DatabaseGuest();

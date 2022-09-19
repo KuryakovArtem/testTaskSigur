@@ -80,6 +80,6 @@ public class GuestsMgr {
                         + ". Отдел: " + employee.get().getDatabaseDepartment().getName()
                         + " Дата встречи: " + databaseGuest.getVisitDate()
                         + " До встречи осталось: "
-                        + daysDiff); 
+                        + daysDiff);
     }
 }

@@ -4,7 +4,7 @@ import com.example.test.Enums.PersonType;
 
 import java.util.Date;
 
-public class Guest extends Person{
+public class Guest extends Person {
     private Date visitDate;
     private Long empId;
 
